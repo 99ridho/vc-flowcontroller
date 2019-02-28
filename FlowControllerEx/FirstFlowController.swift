@@ -10,6 +10,7 @@ import UIKit
 
 protocol FirstFlowControllerProtocol: class {
     func showResultScreen(data: String, onResultProcessed: ((String) -> Void)?)
+    func backToRoot()
 }
 
 protocol FirstFlowControllerManaged: class {
@@ -38,5 +39,9 @@ class FirstFlowController: UIViewController, FirstFlowControllerProtocol {
             onResultProcessed: onResultProcessed
         )
         self.navigationController?.pushViewController(result, animated: true)
+    }
+    
+    func backToRoot() {
+        self.navigationController?.popToViewController(self, animated: true)
     }
 }

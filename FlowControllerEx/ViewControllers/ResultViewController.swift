@@ -37,5 +37,9 @@ class ResultViewController: UIViewController, FirstFlowControllerManaged {
         
         resultLabel.text = result
         onResultProcessed?(result)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { 
+            self.flowController?.backToRoot()
+        }
     }
 }
