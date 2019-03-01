@@ -60,17 +60,25 @@
 		7F7FF6C32228211400872EC1 /* FlowControllerEx */ = {
 			isa = PBXGroup;
 			children = (
-				7F7FF6D82228233100872EC1 /* ViewControllers */,
+				7F7FF6D82228233100872EC1 /* FirstFlow */,
 				7F7FF6C42228211400872EC1 /* AppDelegate.swift */,
 				7F7FF6CB2228211500872EC1 /* Assets.xcassets */,
 				7F7FF6CD2228211500872EC1 /* LaunchScreen.storyboard */,
 				7F7FF6D02228211500872EC1 /* Info.plist */,
-				7F7FF6D62228218A00872EC1 /* FirstFlowController.swift */,
 			);
 			path = FlowControllerEx;
 			sourceTree = "<group>";
 		};
-		7F7FF6D82228233100872EC1 /* ViewControllers */ = {
+		7F7FF6D82228233100872EC1 /* FirstFlow */ = {
+			isa = PBXGroup;
+			children = (
+				7FF8497D2228E88F00BA2964 /* ViewControllers */,
+				7F7FF6D62228218A00872EC1 /* FirstFlowController.swift */,
+			);
+			path = FirstFlow;
+			sourceTree = "<group>";
+		};
+		7FF8497D2228E88F00BA2964 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				7F7FF6D92228234200872EC1 /* InputViewController.swift */,
